@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Taco Cloud</title>
+</head>
+<body>
+<h1>Welcome to Taco ...</h1>
+<img th:src="@{/images/TacoCloud.png}"/>
+<h1>this is by 2020810077 홍창현</h1>
+
+<form method="POST" th:action="@{/logout}">
+    <input type="submit" value="Logout"/>
+</form>
+
+<a th:href="@{/design}" id="design">Design a taco</a>
+<form th:action="@{/design}" method="get" style="display:inline;">
+</form>
+</body>
+</html>
